@@ -8,9 +8,14 @@ class Person {
 	get name(){
 		return this.name;
 	}
-
-	set age(age){
-		this.age = age;
+	get age(){
+		return this.age;
+	}
+	set age(newage){
+		this.age = newage;
+	}
+	set name(newname){
+		this.name = newname;
 	}
 }
 
@@ -26,17 +31,6 @@ class Teacher extends Person {
 	}
 }
 
-const person = new Person(name, age);
-console.log(person.name);
-
-person.age = 30; 
-console.log(person.age); 
-
-onst student = new Student("Alice", 22);
-student.study();
-
-const teacher = new Teacher("Bob", 40);
-teacher.teach();
 
 // Do not change the code below this line
 window.Person = Person;
